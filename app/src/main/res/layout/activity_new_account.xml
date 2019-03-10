@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayTertiaryLight"
+    tools:context=".NewAccountActivity">
+
+    <ImageView
+        style="@style/BackgroundBlue.HeightHalf"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextRegular.White.Center.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/create_new_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/TextLight.White.Center.TextNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Please fill up the forms below \nfor informations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        style="@style/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tv_username"
+                style="@style/TextLight.Gray.Label"
+                android:text="@string/username" />
+
+            <EditText
+                android:id="@+id/edt_username"
+                style="@style/TextLight.EditText.InputText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_username" />
+
+            <TextView
+                android:id="@+id/tv_password"
+                style="@style/TextLight.Gray.Label"
+                android:layout_below="@id/edt_username"
+                android:text="@string/password" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                style="@style/TextLight.EditText.InputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_password"
+                android:layout_marginBottom="32dp" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/TextLight.Gray.Label"
+                android:layout_below="@id/edt_password"
+                android:text="@string/email_address" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                style="@style/TextLight.EditText.InputEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_email" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            style="@style/TextMedium.Gray.BtnWhite.ImageButtonBack"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.7" />
+
+        <Button
+            android:id="@+id/btn_continue"
+            style="@style/TextMedium.White.BtnBlue"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="2.3"
+            android:text="@string/continue_label" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
