@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="120dp"
         android:src="@drawable/ic_emblem_logo_white"
