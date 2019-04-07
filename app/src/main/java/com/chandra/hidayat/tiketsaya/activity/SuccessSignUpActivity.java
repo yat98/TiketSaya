@@ -1,4 +1,4 @@
-package com.chandra.hidayat.tiketsaya;
+package com.chandra.hidayat.tiketsaya.activity;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -6,13 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class SplashActivity extends AppCompatActivity {
-    private String TAG = "SplashActivity";
+import com.chandra.hidayat.tiketsaya.R;
+
+public class SuccessSignUpActivity extends AppCompatActivity {
+    public static final String TAG = "SuccessSignUp";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_success_sign_up);
         new TimerAsyncTask().execute();
     }
 
@@ -31,7 +33,7 @@ public class SplashActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            Intent intentGetStarted = new Intent(SplashActivity.this, GetStartedActivity.class);
+            Intent intentGetStarted = new Intent(SuccessSignUpActivity.this, DashboardActivity.class);
             startActivity(intentGetStarted);
             finish();
         }

@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.KeyboardSoft">
-        <activity android:name=".DashboardActivity"></activity>
-        <activity android:name=".SuccessSignUpActivity" />
-        <activity android:name=".NewAccountProfileActivity" />
-        <activity android:name=".NewAccountActivity" />
-        <activity android:name=".SignInActivity" />
-        <activity android:name=".GetStartedActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".activity.DashboardActivity"></activity>
+        <activity android:name=".activity.SuccessSignUpActivity" />
+        <activity android:name=".activity.NewAccountProfileActivity" />
+        <activity android:name=".activity.NewAccountActivity" />
+        <activity android:name=".activity.SignInActivity" />
+        <activity android:name=".activity.GetStartedActivity" />
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

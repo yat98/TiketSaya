@@ -1,4 +1,4 @@
-package com.chandra.hidayat.tiketsaya;
+package com.chandra.hidayat.tiketsaya.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,14 +7,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class NewAccountProfileActivity extends AppCompatActivity {
+import com.chandra.hidayat.tiketsaya.R;
+
+public class NewAccountActivity extends AppCompatActivity {
+
     private ImageButton btnBack;
     private Button btnContinue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_account_profile);
+        setContentView(R.layout.activity_new_account);
 
         btnBack = findViewById(R.id.btn_back);
         btnContinue = findViewById(R.id.btn_continue);
@@ -29,8 +32,8 @@ public class NewAccountProfileActivity extends AppCompatActivity {
         btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentSuccessSignUp = new Intent(NewAccountProfileActivity.this, SuccessSignUpActivity.class);
-                startActivity(intentSuccessSignUp);
+                Intent intentNewAccountProfile = new Intent(NewAccountActivity.this,NewAccountProfileActivity.class);
+                startActivity(intentNewAccountProfile);
             }
         });
     }
