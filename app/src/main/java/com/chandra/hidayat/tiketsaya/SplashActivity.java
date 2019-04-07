@@ -13,10 +13,10 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        new timerAsyncTask().execute();
+        new TimerAsyncTask().execute();
     }
 
-    private class timerAsyncTask extends AsyncTask<Void, Void, Void> {
+    private class TimerAsyncTask extends AsyncTask<Void, Void, Void> {
 
         @Override
         protected Void doInBackground(Void... voids) {

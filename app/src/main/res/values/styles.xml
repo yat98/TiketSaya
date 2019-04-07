@@ -17,6 +17,10 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <style name="TextMedium.White.Normal">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
     <style name="TextMedium.Gray">
         <item name="android:textColor">@color/colorGraySecondary</item>
     </style>
@@ -106,7 +110,16 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <style name="TextRegular.Green">
+        <item name="android:textColor">@color/colorGreenPrimary</item>
+    </style>
+
     <style name="TextRegular.Black">
+        <item name="android:textColor">@color/colorBlackPrimary</item>
+    </style>
+
+    <style name="TextRegular.Black.Normal">
+        <item name="android:textSize">@dimen/normal_text_size</item>
         <item name="android:textColor">@color/colorBlackPrimary</item>
     </style>
 
@@ -120,6 +133,11 @@
 
     <style name="TextRegular.Black.ExtraLarge">
         <item name="android:textSize">@dimen/extra_large_text_size</item>
+    </style>
+
+    <style name="TextRegular.Green.Large">
+        <item name="android:textSize">@dimen/large_text_size</item>
+        <item name="android:textColor">@color/colorGreenPrimary</item>
     </style>
 
     <!-- CardView -->
