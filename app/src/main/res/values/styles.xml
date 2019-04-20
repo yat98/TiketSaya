@@ -28,11 +28,19 @@
     <style name="TextMedium.White.BtnBlue">
         <item name="android:background">@drawable/ic_btn_blue</item>
         <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="TextMedium.White.BtnGreen">
+        <item name="android:background">@drawable/ic_btn_green</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:stateListAnimator">@null</item>
     </style>
 
     <style name="TextMedium.Gray.BtnWhite">
         <item name="android:background">@drawable/ic_btn_white</item>
         <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:stateListAnimator">@null</item>
     </style>
 
     <!-- Light -->
@@ -44,6 +52,10 @@
         <item name="android:textColor">@color/colorGraySecondary</item>
     </style>
 
+    <style name="TextLight.Gray.Small">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
     <style name="TextLight.Gray.Center">
         <item name="android:gravity">center</item>
     </style>
@@ -52,7 +64,19 @@
         <item name="android:textSize">@dimen/large_text_size</item>
     </style>
 
+    <style name="TextLight.Gray.Center.Small">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+    <style name="TextLight.Gray.Center.Normal">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
     <style name="TextLight.Gray.Center.Large.Spacing">
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra</item>
+    </style>
+
+    <style name="TextLight.Gray.Center.Normal.Spacing">
         <item name="android:lineSpacingExtra">@dimen/spacing_extra</item>
     </style>
 
@@ -73,6 +97,10 @@
 
     <style name="TextLight.White.TextLarge">
         <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="TextLight.White.TextSmall">
+        <item name="android:textSize">@dimen/small_text_size</item>
     </style>
 
     <style name="TextLight.White.Center.TextNormal">
@@ -118,17 +146,32 @@
         <item name="android:textColor">@color/colorBlackPrimary</item>
     </style>
 
+    <style name="TextRegular.Black.Small">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
     <style name="TextRegular.Black.Normal">
         <item name="android:textSize">@dimen/normal_text_size</item>
-        <item name="android:textColor">@color/colorBlackPrimary</item>
     </style>
 
     <style name="TextRegular.White.Center">
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="TextRegular.White.Center.Normal">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
     <style name="TextRegular.White.Center.Large">
         <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="TextRegular.White.Center.ExtraLarge">
+        <item name="android:textSize">@dimen/extra_large_text_size</item>
+    </style>
+
+    <style name="TextRegular.White.Center.Normal.Bold">
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="TextRegular.Black.ExtraLarge">
@@ -138,6 +181,13 @@
     <style name="TextRegular.Green.Large">
         <item name="android:textSize">@dimen/large_text_size</item>
         <item name="android:textColor">@color/colorGreenPrimary</item>
+    </style>
+
+    <style name="TextLight.Blue">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+    <style name="TextLight.Blue.Small">
+        <item name="android:textSize">@dimen/small_text_size</item>
     </style>
 
     <!-- CardView -->
@@ -166,4 +216,28 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">240dp</item>
     </style>
+
+    <!-- Background Detail -->
+    <style name="BackgroundDetail">
+        <item name="android:layout_height">240dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/ic_pisa_detail</item>
+    </style>
+
+    <!-- HR Lines -->
+    <style name="HorizontalLines">
+        <item name="android:background">@color/colorGrayTertiary</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- Icon Detail-->
+    <style name="IconDetail">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_marginRight">@dimen/activity_vertical_margin</item>
+    </style>
+
 </resources>

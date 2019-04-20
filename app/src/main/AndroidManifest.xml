@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.KeyboardSoft">
-        <activity android:name=".activity.DashboardActivity"></activity>
+        <activity android:name=".activity.ProfileEditActivity"></activity>
+        <activity android:name=".activity.DetailTicketBuyActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.SuccessBuyTicketActivity" />
+        <activity android:name=".activity.CheckoutActivity" />
+        <activity android:name=".activity.DetailActivity" />
+        <activity android:name=".activity.DashboardActivity" />
         <activity android:name=".activity.SuccessSignUpActivity" />
         <activity android:name=".activity.NewAccountProfileActivity" />
         <activity android:name=".activity.NewAccountActivity" />

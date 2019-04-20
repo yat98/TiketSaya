@@ -21,7 +21,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tv_title_detail"
             style="@style/TextRegular.White.Center.Large"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,10 +39,10 @@
             android:layout_height="56dp"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="32dp"
             android:background="@drawable/ic_border_gray"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView">
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_detail">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/iv_profile_image"
@@ -58,10 +58,10 @@
             android:layout_width="wrap_content"
             android:layout_height="56dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="32dp"
             android:orientation="vertical"
             app:layout_constraintStart_toEndOf="@+id/fl_profile_image"
-            app:layout_constraintTop_toBottomOf="@+id/textView">
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_detail">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -82,17 +82,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView4"
-                    android:text="Traveller" />
+                    android:text="@string/traveller" />
             </LinearLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="56dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView">
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_detail">
 
             <TextView
                 style="@style/TextRegular.Green.Large"
@@ -120,7 +120,7 @@
                 android:padding="@dimen/large_text_size">
 
                 <TextView
-                    android:id="@+id/tv_main_menus"
+                    android:id="@+id/tv_detail_header"
                     style="@style/TextRegular.Black.Normal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -128,21 +128,17 @@
                     android:text="@string/main_menus" />
 
                 <TextView
-                    android:id="@+id/tv_main_menus_subtitle"
-                    style="@style/TextLight.Gray.Center"
+                    android:id="@+id/tv_detail_sub_header"
+                    style="@style/TextLight.Gray.Center.Small"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_main_menus"
+                    android:layout_below="@id/tv_detail_header"
                     android:text="@string/explore_the_beauty_of_world" />
 
                 <View
                     android:id="@+id/vw_lines"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_below="@+id/tv_main_menus_subtitle"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginBottom="16dp"
-                    android:background="@color/colorGrayTertiaryLight"></View>
+                    style="@style/HorizontalLines"
+                    android:layout_below="@+id/tv_detail_sub_header"/>
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rv_menu"
@@ -165,12 +161,12 @@
 
         <TextView
             android:id="@+id/textView8"
-            style="@style/TextLight.Gray.Center"
+            style="@style/TextLight.Gray.Center.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="4dp"
-            android:text="@string/explore_the_beauty_of_world"
+            android:layout_marginTop="8dp"
+            android:text="@string/learn"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
